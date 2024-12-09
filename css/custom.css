@@ -219,13 +219,13 @@ footer {
 }
 
 .knockout-image {
-    height: 500px;
+    height: 700px;
     background-size: contain;
     background-image: url('../assets/img/howto-ko.png');
 }
 
 .transform-image {
-    height: 300px;
+    height: 350px;
     background-size: contain;
     background-image: url('../assets/img/howto-transform.png');
 }
@@ -276,8 +276,24 @@ footer {
 
 /* Make sure images maintain aspect ratio on mobile */
 @media (max-width: 992px) {
-    .feature-image, .dojo-image {
+    .feature-image {
         height: 300px;
+        background-size: contain;
+    }
+
+    /* Specific sizes for different feature images on mobile */
+    .dojo-image {
+        height: 500px;
+        background-size: contain;
+    }
+
+    .knockout-image {
+        height: 600px;
+        background-size: contain;
+    }
+
+    .transform-image {
+        height: 250px;
         background-size: contain;
     }
 }
@@ -423,5 +439,107 @@ footer {
     .game-title-container {
         padding: 1.5rem;
         margin-bottom: 2rem;
+    }
+}
+
+/* Mobile navigation adjustments */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        display: none; /* Remove hamburger menu */
+    }
+
+    .nav-links {
+        margin-left: 0;
+    }
+
+    .header-link {
+        font-size: 1rem;
+        padding: 0.25rem 0;
+    }
+
+    .nav-divider {
+        height: 16px;
+        margin: 0 0.75rem;
+    }
+
+    .header-link.instagram-link {
+        font-size: 1.2rem;
+        padding: 0.25rem;
+    }
+
+    /* Adjust container padding for mobile */
+    .navbar .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Adjust studio name size */
+    .navbar small {
+        font-size: 0.8rem !important;
+    }
+
+    /* Adjust logo size */
+    .navbar img {
+        height: 45px !important;
+    }
+}
+
+/* Mobile adjustments for feature content */
+@media (max-width: 992px) {
+    .feature-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .feature-item p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .feature-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Mobile adjustments for index page */
+@media (max-width: 992px) {
+    /* Adjust main text content */
+    .masthead h2.display-7 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .masthead .lead {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Make scroll container more compact */
+    .masthead .mb-5.mb-lg-0 {
+        padding: 20px 25px;
+    }
+
+    /* Adjust spacing */
+    .masthead .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    /* Adjust button size */
+    .masthead .btn-lg {
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+
+    /* Make cards preview image larger */
+    .game-preview-container img {
+        width: 120%;  /* Make image larger than container */
+        margin-left: -10%;  /* Center the oversized image */
+        max-width: none;
+    }
+
+    /* Add some spacing after the image */
+    .game-preview-container {
+        margin-bottom: 3rem;
     }
 }
