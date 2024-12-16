@@ -419,26 +419,23 @@ footer {
 
 /* Game title styling */
 .game-title-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
-    border-radius: 15px;
-    margin-bottom: 3rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .game-title {
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 }
 
 @media (max-width: 768px) {
     .game-title {
-        max-width: 90%;
+        max-width: 50%;
     }
-    .game-title-container {
-        padding: 1.5rem;
-        margin-bottom: 2rem;
+    .text-center.mb-5 {
+        margin-bottom: 1rem !important;
     }
 }
 
